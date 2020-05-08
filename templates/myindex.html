@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>District Analysis</title>
+    <!-- Latest compiled and minified CSS & JS -->
+    <link rel="stylesheet" media="screen" href="https://netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    
+	<link rel="stylesheet" href="../static/assets/css/style.css">
+    <link rel="stylesheet" href="../static/assets/css/d3Style.css">
+    <link rel="stylesheet" href="../static/styles.css">
+    
+</head>
+<body style="background-color:rgba(3, 90, 100, 0.411);">
+
+    
+        <div class="container" style="background-color: #FCF7F7">
+                <div class="row">
+                        
+						    <div class="col-md-12" style="background-color: rgba(235,128,0,0.6)">
+								<h1 class="col-md-8" align="right">District Analysis</h1>
+								<p class="col-md-4" align="right">
+									<a class="btn btn-primary btn-lg" style="background-color: rgba(128,128,0,0.6)" href="/stateAnalysis" role="button">State Analysis</a>
+									<a class="btn btn-primary btn-lg" style="background-color: rgba(128,128,0,0.6)" href="/AllIndia" role="button">All India</a>
+									<h5 align="right"><select id="selState" onchange="optionChanged(this.value)"></select></h5>
+									<h6 align="right"><select id="selDistrict" onchange="distChanged(this.value, selState.value)"></select></h6>
+								</p>
+								
+							</div>
+							
+							<div class="row">
+							    <div class="col-md-4">	
+									<div class="panel panel-primary">
+										<div class="panel-heading" style="background-color: rgba(235, 62, 19,0.6)">
+											<abbr title="Statistics as per SOURCE">
+											 <h3 class="panel-title" align="Center">Statistics 2017</h3>
+											</abbr>
+										</div>
+										<div id="year-2017-metadata" class="panel-body"></div>
+									</div>
+								</div>
+								<div class="col-md-4">	
+									<div class="panel panel-primary">
+										<div class="panel-heading" style="background-color: rgba(19, 84, 235,0.6)">
+											<abbr title="Statistics as per SOURCE">
+											 <h3 class="panel-title" align="Center">Statistics 2018</h3>
+											</abbr>
+										</div>
+										<div id="year-2018-metadata" class="panel-body"></div>
+									</div>
+								</div>
+								<div class="col-md-4">	
+									<div class="panel panel-primary">
+										<div class="panel-heading" style="background-color: rgba(57, 147, 56,0.6)">
+											<abbr title="Statistics as per SOURCE">
+											 <h3 class="panel-title" align="Center">Statistics 2019</h3>
+											</abbr>
+										</div>
+										<div id="year-2019-metadata" class="panel-body"></div>
+									</div>
+								</div>
+															
+						
+                </div>
+				<div class="col-md-1"></div>
+				<div class="col-md-10">
+					<p><b>Infant Mortality Rate (IMR)</b> is the number of deaths per 1,000 live births of children under one year of age.</p>
+					<p><b>Maternal Mortality Rate (IMR)</b> refers to deaths due to complications from pregnancy or childbirth per 100000 live births.</p>
+					<p><b>GDP Per Capita (Current INR)</b> is the monetary value of all finished Goods and Services in a country during a period.</p>
+				
+				</div>
+				<div class="col-md-1"></div>
+                
+            </div>
+   
+    <!-- Footer-->
+  <div class="footer">
+    <small style="color:black;">Data Source: <a href="https://nrhm-mis.nic.in/hmisreports/frmstandard_reports.aspx" target="_blank" style="color:Yellow">NRHM-I</a>, <a href="https://nrhm-mis.nic.in/SitePages/HMIS-Publications.aspx" target="_blank" style="color:Yellow">NRHM-II</a> and <a href="http://mospi.nic.in/sites/default/files/press_releases_statements/State_wise_SDP_28_02_2020.xls" target="_blank" style="color:Yellow">Ministry of Statistics and Programme Implementation, GOI</a></small>
+	<h5 align="Center" style="color:white;">by: Darswal</h5>
+  </div>     
+  <script src="../static/index.js" type="text/javascript"></script>
+	<script src="../static/index1.js" type="text/javascript"></script>
+	<script src="../static/index2.js" type="text/javascript"></script>
+</body>
+</html>

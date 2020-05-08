@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>State Analysis</title>
+    <!-- Latest compiled and minified CSS & JS -->
+    <link rel="stylesheet" media="screen" href="https://netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    
+	<link rel="stylesheet" href="../static/assets/css/style.css">
+    <link rel="stylesheet" href="../static/assets/css/d3Style.css">
+    <link rel="stylesheet" href="../static/styles.css">
+</head>
+<body style="background-color:rgba(3, 90, 100, 0.411);">
+    
+        <div class="container" style="background-color: #FCF7F7">
+                <div class="row">
+                        
+						    <div class="col-md-12" style="background-color: rgba(235,128,0,0.6)">
+								<h1 class="col-md-8" align="right">State Analysis</h1>
+								<p class="col-md-4" align="right">
+									<a class="btn btn-primary btn-lg" style="background-color: rgba(128,128,0,0.6)" href="/" role="button">District Analysis</a>
+									<a class="btn btn-primary btn-lg" style="background-color: rgba(128,128,0,0.6)" href="/AllIndia" role="button">All India</a>
+									<h5 align="right"><select id="wselDataset" onchange="myoptionChanged(this.value)"></select></h5>
+									
+								</p>
+								
+							</div>
+							
+							<div class="row">
+							    <div id="myChartContainer1" class="col-md-4">
+									<canvas id="lineChartMMR" ></canvas>
+                                </div>	
+					            <div id="myChartContainer2" class="col-md-4">
+									<canvas id="lineChartIMR" ></canvas>
+                                </div>
+								<div id="myChartContainer3" class="col-md-4">
+									<canvas id="lineChartGDP" ></canvas>
+                                </div>
+                                						
+							</div>
+							
+						
+						
+                </div>
+                <div class="row">
+				    
+					
+                </div>
+				
+				
+				
+            </div>
+    
+     <!-- Footer-->
+  <div class="footer">
+    <small style="color:black;">Data Source: <a href="https://nrhm-mis.nic.in/hmisreports/frmstandard_reports.aspx" target="_blank" style="color:Yellow">NRHM-I</a>, <a href="https://nrhm-mis.nic.in/SitePages/HMIS-Publications.aspx" target="_blank" style="color:Yellow">NRHM-II</a> and <a href="http://mospi.nic.in/sites/default/files/press_releases_statements/State_wise_SDP_28_02_2020.xls" target="_blank" style="color:Yellow">Ministry of Statistics and Programme Implementation, GOI</a></small>
+	<h5 align="Center" style="color:white;">by: Darswal</h5>
+  </div>    
+    <script src="../static/index3.js" type="text/javascript"></script>
+    <script src="../static/index4.js" type="text/javascript"></script>
+	<script src="../static/index5.js" type="text/javascript"></script>
+    <script src="../static/index6.js" type="text/javascript"></script>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.9.1/d3-tip.js"></script>
+  
+  
+</body>
+</html>
