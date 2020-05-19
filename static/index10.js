@@ -57,7 +57,7 @@ var chartOptions = {spanGaps: true,
      title: {
             display: true,
 			fontSize: 19,
-            text: 'Infant Mortality Rate across States'
+            text: 'Maternal Mortality Rate across States'
         },
 
 	legend: {
