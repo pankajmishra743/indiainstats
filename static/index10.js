@@ -15,7 +15,8 @@ Chart.defaults.global.defaultFontSize = 9;
 var chartData = {
   labels: ["2017","2018","2019"],
   
-  datasets: [{ label: 'A & N Islands', data: [313.76, 119.79, 372.2], backgroundColor: '#660066', pointHoverRadius: 2, pointRadius: 1, borderWidth: -5, fill: false, borderColor: '#660066' },
+  datasets: [{ label: ' INDIA', data: [108.12, 88.92, 109.89], backgroundColor: '#952E19', pointHoverRadius: 3, pointRadius: 2, borderWidth: 5, fill: false, borderColor: '#952E19', borderDash: [10,5] },
+{ label: 'A & N Islands', data: [313.76, 119.79, 372.2], backgroundColor: '#660066', pointHoverRadius: 2, pointRadius: 1, borderWidth: -5, fill: false, borderColor: '#660066' },
 { label: 'Andhra Pradesh', data: [79.02, 57.96, 65.32], backgroundColor: '#FF8080', pointHoverRadius: 2, pointRadius: 1, borderWidth: -5, fill: false, borderColor: '#FF8080' },
 { label: 'Arunachal Pradesh', data: [87.81, 12.42, 38.43], backgroundColor: '#0066CC', pointHoverRadius: 2, pointRadius: 1, borderWidth: -5, fill: false, borderColor: '#0066CC' },
 { label: 'Assam', data: [186.25, 162.81, 150.96], backgroundColor: '#CCCCFF', pointHoverRadius: 2, pointRadius: 1, borderWidth: -5, fill: false, borderColor: '#CCCCFF' },
